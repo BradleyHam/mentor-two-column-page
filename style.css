@@ -9,6 +9,12 @@
 
 --Light-Grayish-Blue: hsl(240, 75%, 98%);
 --Light-Gray: hsl(0, 0%, 75%);
+
+--text: rgb(76, 78, 82);
+--text-muted:rgba(76, 78, 82, 0.534);;
+
+
+--gutter: 8rem;
   
 }
 
@@ -24,3 +30,13 @@ body{
     font-family: "Open Sans";
     font-size: 1.6rem;
 }
+
+@media(max-width:790px){
+    :root{
+        --gutter: 4rem;
+    }
+}
+
+   
+
+    

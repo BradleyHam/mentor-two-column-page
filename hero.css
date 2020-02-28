@@ -1,0 +1,97 @@
+.hero{
+    height: 75vh;
+    display:flex;
+    flex-flow:wrap;
+    font-family: "Raleway"
+}
+.left,.right{
+    height: 100%;
+    min-width: 500px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     padding: var(--gutter);
+     flex:3;
+}
+.left h3{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom:0;
+    color: var(--text)
+}
+.left p{
+    padding-top: 10px;
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--text-muted)
+}
+.hero__form{
+    display: flex;
+    padding-top: 1rem;
+}
+.left button{
+    border:none;
+    background: var(--Bright-Blue);
+    color: white;
+    padding: 1.2rem;
+    margin: 0 1rem;
+    flex: 1;
+}
+.left input{
+   padding: 1rem;
+   flex: 1;
+}
+.left input::placeholder{
+    color: var(--text-muted);
+    font-family: "Raleway";
+    opacity: .6;
+}
+.right{
+    flex:4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right img{
+    width: 600px;
+}
+@media(max-width:990px){
+    .hero{
+        min-height: 30vh;  
+    }
+    .right{
+        order: -1;
+        height: 40vh;
+          overflow: hidden;
+    }
+    .right img{
+      width: 70%;
+    }
+  
+   .left{
+       height: 40vh;
+       text-align: center;
+       padding: 0 var(--gutter);
+   }
+
+   .hero__form{
+       padding-top: 2rem;
+   }
+  
+  
+}
+@media(max-width:790px){
+
+   
+.left form{
+    flex-direction: column;
+}
+.left button{
+   margin: 0;
+}
+.left input{
+   margin-bottom: 1rem;
+} 
+}

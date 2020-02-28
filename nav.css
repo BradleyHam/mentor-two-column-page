@@ -3,9 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4rem;
+    padding: 0 var(--gutter);
     font-family: "Raleway";
-  
 }
 
 .nav img{
@@ -15,7 +14,6 @@
 .nav__ul{
     display:flex;
     list-style-type: none;
-   
 }
 
 .nav__ul li:not(:last-child){
